@@ -32,17 +32,17 @@
             <h2 class="title-h2">Все статьи</h2>
             <div class="select-box">
               <select class="select-group" name="select-group">
-                <option value="value1">Выбрать тему</option>
-                <option value="value2">Город</option>
-                <option value="value3">Книги</option>
-                <option value="value4">Путешествия</option>
-                <option value="value5">Рецепты</option>
-                <option value="value6">Фотографии</option>
+                <option value="cities">Город</option>
+                <option value="books">Книги</option>
+                <option value="travels">Путешествия</option>
+                <option value="recipes">Рецепты</option>
+                <option value="photos">Фотографии</option>
+                <option value="all" selected>Выбрать тему</option>
               </select>
             </div>
           </div>
           <div class="article-box_1">
-            <div class="article-box-item">
+            <div class="article-box-item article-block" data-category="travels">
               <div class="article-thumb">
                 <img class="article-image" src="images/travel.jpg" alt="travel">
               </div>
@@ -55,7 +55,7 @@
                 <time datetime="2020-09-29">29.09.2020</time>
               </div>
             </div>
-            <div class="article-box-item">
+            <div class="article-box-item article-block" data-category="cities">
               <div class="article-thumb">
                 <img class="article-image" src="images/city.jpg" alt="city">
               </div>
@@ -68,7 +68,7 @@
                 <time datetime="2020-07-24">24.07.2020</time>
               </div>
             </div>
-            <div class="article-box-item">
+            <div class="article-box-item article-block" data-category="books">
               <div class="article-thumb">
                 <img class="article-image" src="images/book.jpg" alt="travel">
               </div>
@@ -83,7 +83,7 @@
             </div>
           </div>
           <div class="article-box_2">
-            <div class="article-item article-item-photo">
+            <div class="article-item article-block article-item-photo" data-category="photos">
               <div class="article-detail">
                 <a href="article.html" class="title-link">
                   <h3 class="title-h3">Снимки на плёнку</h3>
@@ -95,7 +95,7 @@
                 </div>
               </div>
             </div>
-            <div class="article-item article-item-cake">
+            <div class="article-item article-block article-item-cake" data-category="recipes">
               <div class="article-detail">
                 <a href="article.html" class="title-link">
                   <h3 class="title-h3">Домашний чизкейк </h3>
@@ -124,7 +124,7 @@
               <div class="about-content">
                 <p class="about-text">Всем привет! Меня зовут Аня, и это мой личный блог. Здесь&nbsp;ты найдёшь рассказы о моих путешествиях, снимки на&nbsp;плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
                 <p class="about-text">Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
-                <p class="about-text">Если вы хотите написать мне — это можно сделать в соцсетях или через <a class="form-link" href="#">форму</a>. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.</p>
+                <p class="about-text">Если вы хотите написать мне — это можно сделать в соцсетях или через <a class="form-link" href="#contact">форму</a>. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.</p>
                 <p class="about-text">Приятного чтения!</p>
               </div>
               <blockquote class="about-quotes">
@@ -188,7 +188,7 @@
             </div>
             <div class="contact-form-area">
               <label for="message">Сообщение</label>
-              <textarea name="message" id="message" placeholder="Напишите здесь ваше сообщение." minlength="10" maxlength="200"></textarea>
+              <textarea class="message" name="message" id="message" placeholder="Напишите здесь ваше сообщение." value="Ваше сообщение"></textarea>
             </div>
             <button class="btn btn-form" target="_blank">Отправить</button>
           </form>
@@ -205,5 +205,6 @@
         </ul>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

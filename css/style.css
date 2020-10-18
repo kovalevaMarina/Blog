@@ -1,5 +1,4 @@
 body {
-  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -323,7 +322,12 @@ a {
 }
 
 .about-page .form-link {
-  text-decoration: underline;
+  border-bottom: 1px solid #202117;
+}
+
+.about-page .form-link:hover {
+  color: #A26F32;
+  border-bottom: 1px solid #A26F32;
 }
 
 .about-content {
@@ -368,6 +372,9 @@ a {
 .portfolio-img {
   width: 387px;
   height: 525px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .portfolio-img img {
@@ -759,4 +766,28 @@ a {
   background-color: #FFFFFF;
   cursor: pointer;
 }
+
+.warning {
+  color: #F05B29;
+  border: 1px solid #F05B29;
+}
+
+.warning:focus {
+  color: #F05B29;
+  border: 1px solid #F05B29;
+}
+
+.btn-comment:disabled,
+.btn-form:disabled {
+  opacity: 0.25;
+}
+
+.highlight {
+  border: 3px solid #202117;
+
+
+/* .comment-area.warning {
+	color: red;
+	border: 1px solid red;
+} */
 
